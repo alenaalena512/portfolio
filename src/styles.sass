@@ -26,6 +26,8 @@ $mist: #7A9D96;
         flex-wrap: nowrap
         justify-content: center
         height: 50px
+        @include for-phone-only
+            margin-top: 30px
     .btn 
         margin: 15px
 
@@ -35,6 +37,8 @@ $mist: #7A9D96;
     width: 100%
     text-align: center
     margin-top: 25vh
+    @include for-phone-only
+        margin-top: 20vh
     img 
         height: 100px
         width: 100px
@@ -59,8 +63,8 @@ $mist: #7A9D96;
         font-weight: 100
 .bg 
     position: absolute
-    left: 8%
-    bottom: 5%
+    left: 8vw
+    bottom: 5vh
     z-index: 0
 
 .aboutdiv

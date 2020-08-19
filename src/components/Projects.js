@@ -12,8 +12,13 @@ const serverlessToDoDescription={
 }
 
 const catGameDescription={
-  text: 'A to-do application with OAuth authorisation. Stack: React, JS, Node.js, Serverless',
+  text: 'A simple arcade game. Stack: Phaser.js',
   url: 'https://alenaalena512.github.io/cat-game/'
+}
+
+const numberGuesserDescription = {
+  text: 'Play against computer. Stack: html5, css3',
+  url: 'https://alenaalena512.github.io/number-guesser/'
 }
 export const Projects = () => {
   return (
@@ -21,6 +26,7 @@ export const Projects = () => {
       <MyCard title='Cat Game' {...catGameDescription} />
       <MyCard title='Serverless' {...serverlessToDoDescription} />
       <MyCard title='Calculator' {...calculatorDescription} />
+      <MyCard title='Number-Guesser' {...numberGuesserDescription} />
     </div>
   )
 }
