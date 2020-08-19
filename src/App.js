@@ -3,7 +3,6 @@ import { Header } from './components/Header'
 import { Home } from './components/Home'
 import { About } from './components/About'
 import { Projects } from './components/Projects'
-import './App.sass'
 import { BrowserRouter as HashRouter, Redirect, Switch, Route } from 'react-router-dom'
 import { Footer } from './components/Footer'
 
