@@ -14,6 +14,17 @@ $mist: #7A9D96;
 @mixin for-big-desktop-up
   @media (min-width: 1800px) { @content; }
 
+body 
+  background-color: #CAE4DB !important
+  font-family: 'Alata', sans-serif !important
+  scrollbar-arrow-color:
+  &::-webkit-scrollbar
+    display: none;
+
+html
+  width: 99%
+  height: 100%
+
 .headerContainer
     width: 100%
 
@@ -57,10 +68,10 @@ $mist: #7A9D96;
                 100%
                     color: $dark-blue
                     
-    h3
+    .typed
+        display: block
+        font-size: 1.5rem
         color: $mist
-        font-style: italic
-        font-weight: 100
 .bg 
     position: absolute
     left: 8vw
@@ -117,16 +128,18 @@ $mist: #7A9D96;
         
 
 .footer
+    display: flex
     position: fixed
-    text-align: right
+    justify-content: center
+    align-items: center
     bottom: 0
     background-color: $honey-color
     width: 100%
-    height: 30px
-    vertical-align: bottom
-    div
-        padding: 0 20px;
+    font-size: 1.2rem
+    cursor: default
+    height: 50px
     svg
         margin: 5px
     a
         text-decoration: none
+        color: black

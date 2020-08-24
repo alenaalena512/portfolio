@@ -8,7 +8,7 @@ import { Footer } from './components/Footer'
 
 const App = () => {
   return (
-    <HashRouter basename='/portfolio'>
+    <HashRouter basename='/portfolio' >
       <Header />
         <Redirect from='/home' to='/' />
         <Route exact path='/' component={Home} />
